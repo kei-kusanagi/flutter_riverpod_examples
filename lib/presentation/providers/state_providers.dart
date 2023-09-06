@@ -4,7 +4,7 @@ import '../../config/config.dart';
 
 part 'state_providers.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 class Counter extends _$Counter {
   @override
   int build() => 5;
@@ -13,9 +13,6 @@ class Counter extends _$Counter {
     state++;
   }
 }
-
-// DarkMode -> boolean default: false
-// void toogleDarkMode()
 
 @riverpod
 class DarkMode extends _$DarkMode {
@@ -27,11 +24,7 @@ class DarkMode extends _$DarkMode {
   }
 }
 
-// Username => String
-// Default: 'Karen Marisol'
-// changeName (String name)
-// usernameProvider.notifier.changeName ( RandomGenerator.getRandomName())
-@riverpod
+@Riverpod(keepAlive: true)
 class Username extends _$Username {
   @override
   String build() {
