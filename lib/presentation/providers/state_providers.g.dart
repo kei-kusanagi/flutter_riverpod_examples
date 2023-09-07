@@ -20,7 +20,7 @@ final counterProvider = NotifierProvider<Counter, int>.internal(
 );
 
 typedef _$Counter = Notifier<int>;
-String _$darkModeHash() => r'e91c869e8b6f10d98a8694ca5fcee335f67d8a59';
+String _$darkModeHash() => r'6fb6387ce352c6822524063335a6e3df6c924864';
 
 /// See also [DarkMode].
 @ProviderFor(DarkMode)
