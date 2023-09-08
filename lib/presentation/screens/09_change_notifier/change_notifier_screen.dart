@@ -1,9 +1,6 @@
-// class ChangeNotifierScreen extends StatelessWidget {
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/providers.dart';
 import '../../providers/todos_change_notifier.dart';
 
 class ChangeNotifierScreen extends ConsumerWidget {
@@ -13,7 +10,7 @@ class ChangeNotifierScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('State Notifier Provider'),
+        title: const Text('Change Notifier Provider'),
       ),
       body: const _TodosView(),
       floatingActionButton: FloatingActionButton(
